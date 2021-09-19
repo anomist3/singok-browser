@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nanum+Gothic&display=swap"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css" /> -->
+
+		<script src="js/app.js" defer></script>
+		<script src="js/quotes.js" defer></script>
+		<script src="js/background.js" defer></script>
+		<script src="js/todo.js" defer></script>
+		<script src="js/weather.js" defer></script>
+		<title>Singok Browser</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- USERNAME -->
+			<form id="login-form">
+				<input
+					type="text"
+					required
+					maxlength="20"
+					placeholder="이름을 입력하세요"
+				/>
+				<input type="submit" value="Log in" />
+			</form>
+			<h1 id="greeting" class="hidden"></h1>
+
+			<!-- CLOCK -->
+
+			<div id="clock-container">
+				<h2 id="clock"></h2>
+			</div>
+
+			<!-- Quotes -->
+			<div id="quote">
+				<span></span>
+				<span></span>
+			</div>
+
+			<!-- ToDo List -->
+			<form id="todo-form">
+				<input type="text" placeholder="할 일 목록" />
+			</form>
+			<ul id="todo-list"></ul>
+
+			<!-- Recommended -->
+			<a href="http://singok.es.kr">Singok Homepage</a>
+			<a href="https://indischool.com">Indi School</a>
+
+			<!-- Weather -->
+			<div id="weather">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<button id="reset-name" class="hidden">이름 바꾸기</button>
+	</body>
+</html>
